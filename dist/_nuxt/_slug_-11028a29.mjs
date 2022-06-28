@@ -1,0 +1,1 @@
+import{_ as o,o as s,c as e,t as r}from"./entry-94bf2d35.mjs";const a={computed:{post(){}}},c={class:"container"};function n(t,_,p,i,l,u){return s(),e("div",c,r(t.$route.slug),1)}var f=o(a,[["render",n]]);export{f as default};

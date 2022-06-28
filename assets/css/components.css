@@ -1,0 +1,27 @@
+body { @apply font-primary; }
+
+ /* ************************** FORM STYLES ****************************** */
+
+.defaultForm {
+    @apply mt-60;
+        label{
+            @apply block font-700 text-24 font-cond mb-5;
+        }
+        input[type='text']{
+            @apply w-full h-[50px] border border-solid border-[#979797];
+        }
+        textarea{
+            @apply w-full h-[225px] text-18 mb-5 p-20;
+        }
+        button{
+            @apply button-primary px-90 font-cond font-900 text-18;
+        }
+}
+
+@layer components {
+    .button-primary{
+        @apply text-18 font-900  py-10 px-30 text-white bg-primary mb-20 mt-20 inline-block hover:bg-primary-dark;
+        transition: 0.2s background-color;
+    }
+    .transition-02{ transition: all 0.2s; }
+}

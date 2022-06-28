@@ -1,0 +1,637 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "./components.css";
+@import "tailwindcss/utilities";
+
+
+ /* ************************** NAV ****************************** */
+.mainNav{
+    @apply w-full;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    &__inner{
+        @apply grid py-15 px-25 items-center;
+        grid-template-columns: 180px minmax(400px, 500px) minmax(auto, 100px) minmax(200px, auto) 130px;
+    }
+    &__nav{
+        @apply ml-40 grid font-700 text-20 font-cond;
+        grid-template-columns: 1fr 1fr 1fr;
+        li{
+            @apply ml-40 border-r border-solid border-gray-200 py-10 my-10;
+            span{
+                @apply font-primary font-700 relative  px-5; 
+            
+            }
+        }
+        li:last-of-type{
+            @apply border-none;
+        }
+    }
+    &__searchForm{
+        @apply border-gray-200 border-l border-solid pl-25 relative;
+        label{
+            @apply absolute left-[40px] top-[15px] text-primary font-300 text-14;
+            .searchIcon{
+                @apply float-left w-[23px] mr-[18px];
+            }
+        }
+        input{
+            @apply w-full h-[50px] rounded-md;
+        }
+    }
+    &__login{
+        @apply uppercase text-primary font-500 font-cond ml-20 pl-20 text-14;
+        @apply border-gray-200 border-l border-solid py-15;
+        svg{
+            @apply fill-primary float-left mr-15 ;
+        }
+    }
+    &__nav__submenu{
+        @apply absolute bg-white shadow-lg z-10;
+        > li {
+            @apply p-0 my-10 mx-10;
+        }
+        > li > a {
+            @apply font-300 leading-normal transition-02 hover:text-primary;
+
+        }
+    }
+}
+
+
+
+ /* ************************** FOOTER ****************************** */
+footer{
+    @apply bg-black;
+
+.footerTop{
+    @apply grid   text-white pt-45 pb-20 mx-auto;
+    max-width: 1280px;
+    grid-template-columns: 58% 42%;
+    h3{
+        @apply uppercase font-700 mb-15 font-cond text-24;
+    }
+    .mail {
+    }
+    &__colOne{   
+        @apply font-cond;
+        &__iconlinks{
+            @apply mb-55  ;
+            a{
+                @apply block text-18;
+            }
+            svg{
+                @apply   mr-15 relative ;
+            }
+        }     
+        font-size: 18px;
+        font-weight: 400;
+        svg{
+            @apply w-[20px]  fill-white inline ;
+        }
+        h4{
+            @apply font-700 text-21;
+        }
+        h4 svg{
+            @apply ml-5;
+        }
+    }
+    &__colTwo{
+        &__btn{
+            @apply button-primary mt-30;
+        }
+    }
+}
+
+.footerBottom{
+    @apply mx-auto text-white border-t-4 border-solid border-white pt-35 pb-100;
+    @apply font-cond  text-18 leading-30;
+    max-width: 1280px;
+    &__logo{
+        @apply mb-25;
+    }
+    &__grid{
+        @apply grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    h3{
+        @apply font-cond uppercase mt-10 mb-15;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    a{
+      @apply block;
+    }
+}
+
+}
+
+ /* ************************** HOMEPAGE ****************************** */
+ .homeHero {
+    @apply grid pb-20;
+    grid-template-columns: 40% 60%;
+    &__colOne{
+        @apply ml-100 mt-100;
+        h2{
+            @apply mb-20;
+            font-size: 80px;
+            font-weight: 300;
+        }
+        h3{
+            @apply text-32 font-200 mb-45;
+        }
+    }
+
+    &__button{
+        @apply text-primary border border-black border-solid font-700 text-21 w-[205px] py-[8px] block text-center;
+    }
+    &__colTwo{
+        @apply text-right;
+        img{
+            @apply ml-auto;
+        }
+    }
+}
+.homeCategories{
+     ul {
+        @apply grid grid-cols-4  gap-1;
+        > li {
+            @apply bg-black text-white uppercase text-center text-50 font-700 leading-40 font-cond py-100;
+        }
+    }
+}
+.homeAbout{
+    @apply   py-50;
+    &__largeHeading{
+        @apply bg-white pt-40;
+        &__svg{
+            @apply fill-light-gray mx-auto;
+        }
+    }
+    &__bg{
+        @apply bg-light-gray py-40;
+    }
+    &__iconList{
+        @apply grid grid-cols-6 text-20 text-center font-400 ;
+        li{
+            @apply flex flex-col items-center  leading-20;
+            .icon{
+                @apply bg-white rounded-full p-10 border-primary border-[10px] w-[150px] h-[150px] mb-15;
+                img{
+                    @apply w-[60px];
+                }
+            }
+        }
+    }
+    &__content{
+        @apply py-30 text-21 max-w-[1360px] mx-auto mt-30 ;
+        line-height: 41px;
+    }
+    &__btn{
+     @apply button-primary mb-40  mx-auto;
+    }
+    button{
+        @apply block text-center mx-auto;
+    }
+}
+.homeCards{
+    @apply mt-20;
+    &__grid{
+        @apply grid grid-cols-3 gap-4;
+    }
+ 
+    &__item{
+        &__content{
+            @apply border-light-gray border border-solid bg-white mx-20 px-30 pt-20 pb-20 mt-[-30px] relative;
+            &__headline{
+                
+                @apply text-center text-30 font-700 relative font-cond; 
+                &__underline{
+                    @apply mx-auto mb-20;
+                }
+        }
+        p{
+            @apply mb-30;
+        }
+        &__link{
+            @apply text-primary font-cond underline hover:no-underline ; 
+        }
+    }
+}
+}
+
+.homeVideo{
+    @apply grid pt-80;
+    grid-template-columns: 57% 43%;
+    &__colOne{
+        background: url('~/assets/images/home-video.png');
+        @apply bg-cover bg-no-repeat bg-center flex flex-col text-white justify-center items-center bg-opacity-40 bg-black;
+        img{
+            @apply cursor-pointer;
+        }
+        font-size: 20px;
+
+    }
+    &__colTwo{
+        @apply text-white p-100 pt-[120px];
+        background-color: black;
+        img{
+            @apply mb-20
+        }
+        h3{
+            @apply font-cond max-w-[400px] mb-20 font-300;
+            font-size: 30px;
+        }
+        p{
+            @apply max-w-[400px] mb-40;
+            font-size: 21px;
+            letter-spacing: 0.45px;
+        }
+        &__btn{
+            @apply button-primary;
+        }
+    }
+}
+
+.homeLogoBar{
+    &__grid{
+        @apply flex pt-90 pb-60 justify-between mx-auto;
+ 
+        max-width:1360px;
+    }
+
+    h3{
+        @apply text-30 font-900 font-cond;
+        font-size: 30px;
+        letter-spacing: 0.65px;
+        line-height: 32px;
+        img{
+            @apply mt-10 ;
+        }
+        
+
+    }
+}
+
+
+ /* ************************** INTERIORS ****************************** */
+
+ .interiorTitle{
+    @apply h-[300px] flex flex-col justify-center;
+    background: url('~/assets/images/interiorHeaderBg.png');
+    h1{
+        @apply text-72 font-300;
+    }
+    p{
+        @apply text-32 font-200 max-w-[850px];
+    }
+    h1, p {
+        @apply relative top-[-20px]
+    }
+ }
+ 
+ .breadcrumb{
+    @apply font-cond mb-10;
+    color: #777777;
+    font-size: 21px;
+    &.mt-var {
+        @apply mt-30;
+    }
+ 
+}
+
+ /* ************************** CONTACT PAGE  ****************************** */
+
+
+ .contactSection{
+    @apply grid gap-[110px] border-[#3c3c3c] border-b-2 border-solid pb-55;
+    grid-template-columns: 68% 32%;
+    
+    
+    &__form{
+        @apply mt-60;
+        &__grid{
+            @apply grid grid-cols-2 gap-6;
+
+        }
+        &__item{
+        }
+        /* label{
+            @apply block font-700 text-24 font-cond mb-5;
+        } */
+        /* input[type='text']{
+            @apply w-full h-[50px] border border-solid border-[#979797];
+        } */
+        /* textarea{
+            @apply w-full h-[225px] text-18 mb-5 p-20;
+        } */
+        /* button{
+            @apply button-primary px-90 font-cond font-900 text-18;
+        } */
+        &__bottom{
+            @apply mt-20;
+        }
+    }
+    .colTwo{
+        @apply font-cond;
+        h4{
+            @apply text-30 font-cond font-700 mb-30 relative;
+            &:after{
+                @apply absolute bg-primary;
+                content: ' ';
+                width:100px;
+                height:2px;
+                bottom:-10px;
+                left:0;
+            } 
+            
+            
+        }
+        h5{
+            @apply text-28 font-700 mb-10 ;
+        } 
+        p{
+            @apply text-24 leading-30 mb-15;
+        }
+
+    }
+ }
+
+ .contactLinks{
+    @apply mt-60 mb-100;
+    &__grid{
+        @apply grid grid-cols-3 justify-between px-60;
+        gap:15%;
+    }
+    h3{
+        @apply text-30 font-700 font-cond text-center mb-10;
+    }
+    .underlines{
+        @apply mx-auto block mb-20;
+    }
+    p{
+        @apply text-18 leading-22 mb-20 h-[110px];
+        letter-spacing: 0.39px;
+    }
+    &__item__btn{
+        @apply bg-white text-primary block border border-black border-solid text-center py-10 text-18 font-700;
+        border-radius:2px;
+        img{
+            @apply relative left-3;
+            @apply w-[8px] inline;
+        }
+        &:nth-child(2){
+            @apply bg-primary text-white;
+        }
+    }
+    .contactLinks__item:nth-of-type(2) .contactLinks__item__btn{
+        @apply bg-primary text-white border-primary;
+        img{
+            filter: brightness(900%);
+
+        }
+
+    }
+ 
+ }
+
+  /* ************************** SUPPORT & RESOURCES PAGE  ****************************** */
+
+.supportResourcesSection{
+    
+    &__grid{
+        @apply grid grid-cols-4 gap-4 mt-30 mb-30;
+    }
+    &__item{
+        @apply col-span-1 text-center flex flex-col justify-around items-center p-20 pb-10;
+        background-color: #f2f2f2;
+        border: 3px solid #dedede;
+        img{
+            @apply h-10 mb-[6px];
+        }
+        h4{
+            @apply text-28 font-700 font-cond mb-[17px];
+        }
+        p{
+            line-height: 22px;
+        }
+  
+
+        &__learnMore{
+            @apply button-primary w-full;
+        }
+    }
+    &__warranty{
+        @apply col-span-4 px-25 pt-10 grid grid-cols-3 pb-25   ;
+        border: 3px solid #dedede;
+        background-color: #f2f2f2;
+        h3{
+            @apply col-span-3 text-28 font-700 font-cond tracking-[0.6px] relative border-solid border-primary border-b-2 pb-15 mb-15;
+            img{
+                @apply float-left pr-[18px] pt-[8px];
+            }
+        } 
+        a{
+            @apply text-22 font-cond tracking-[.47px] underline text-primary font-700;
+        }
+    }
+}
+
+ 
+
+ /* ************************** REQUEST FREE SAMPLE SECTION ****************************** */
+ 
+ 
+ 
+ 
+ /* ************************** POSTS INDEX ****************************** */
+
+
+ .posts{
+
+    @apply pt-50 max-w-[1320px] ;
+
+    &__grid{
+        @apply grid;
+        grid-template-columns: minmax(  auto, 865px) minmax(auto, 305px);
+        gap: 107px;
+    }
+
+    h2{
+        @apply font-cond font-700 text-36 mb-30;
+    }
+    date{
+        @apply text-18 font-400 font-cond mb-20 block;
+        color: #777777;
+    }
+
+    .newsCardBig{
+        @apply border-solid border-2 border-light-gray mb-35;
+        &__content{
+            @apply p-30;
+        }
+        &__title{
+            @apply text-30 font-700 font-cond mb-[12px];
+        }
+
+        &__excerpt{
+            @apply text-18 font-400 leading-22 mb-10;
+        }
+    }
+    .newsCardsSmall{
+        @apply grid grid-cols-2 gap-4 pb-50;
+        .newsCardSmall{
+            @apply border-solid border-2 border-light-gray;
+            &__content{
+                @apply px-30 py-45;
+            }
+
+            &__title{
+                @apply text-24 font-700 font-cond  mb-[17px] leading-24; 
+            }
+            &__date{
+                @apply text-18 font-400 font-cond mb-[16px] block;
+                color: #777777;
+            }
+            &__excerpt{
+                @apply text-18 font-400 leading-22;
+            }
+        }
+    }
+
+    .postsSidebar{
+        @apply pt-[50px] font-cond;
+        h3 { @apply font-cond mb-8;
+            font-size: 21px;
+            font-weight: 700;
+        }
+        h3.underlines{
+            @apply border-b-2 border-solid border-primary pb-10;
+        }
+        &__forms{
+            form{
+                @apply relative mb-30 w-full;
+            }
+            label {
+                @apply absolute top-3;
+                img{
+                    @apply float-left w-[20px] mx-15 relative top-1;
+                }
+    
+            }
+        }
+        input{
+            @apply w-full;
+            height: 50px;
+            border-radius: 2px;
+            border: 1px solid #ebebeb;
+            background-color: #f2f2f2;
+        }
+
+        &__featuredPosts{
+            h3{
+                @apply mb-20;
+            }
+            &__postTitle{
+                @apply text-18 font-700 leading-24 mb-[6px];
+            }
+            &__postDate{
+                @apply mb-[22px] block;
+            }
+        }
+        &__followUs{
+           
+            &__links{
+               @apply flex mt-20;
+                &__link{
+                    @apply mr-[32px];
+                    img{
+                        @apply w-[22px];
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ .singlePost{
+     @apply pb-100;
+      .breadcrumb {
+        @apply mb-5
+      }
+    .postTitle{
+        @apply font-cond font-700 text-36 mb-10;
+    }
+    date{
+        @apply mb-30;
+    }
+    img{
+        @apply mb-30;
+    }
+    h3, h4 {
+        @apply font-cond mb-15;
+    }
+    h2{
+        @apply font-cond text-28 mb-15;
+    }
+    p{
+        @apply text-18 leading-22 mb-20; 
+    }
+    p + img{
+        @apply mt-45;
+    }
+
+    h3{
+        @apply text-24 font-700 ;
+    }
+    h4{
+        @apply text-20 font-700;
+    }
+    ul, ol {
+        @apply text-18 mb-40 mt-25;
+
+    }
+    ul li::before{
+        @apply  left-0 absolute;
+        content: "• ";
+    }
+    li{
+        @apply mb-10  text-18 leading-24 pl-30 relative;
+    }
+
+    ol li{
+        counter-increment: step-counter;
+    }
+    ol li::before {
+        @apply  left-0 absolute;
+        content: counter(step-counter) ".";
+ 
+  
+    }
+
+    blockquote{
+        @apply relative mt-45 mr-20 mb-80;
+        &::before{
+            @apply border-primary border-t-2 border-r-2   absolute  ;
+            content: ' ';
+            width:100%;
+            height:110px;
+            border-radius: 0 20px 0 0  ; 
+        }
+        &::after{
+            @apply border-primary border-b-2 border-l-2 left-0 bottom-[-35px]   absolute  ;
+            content: ' ';
+            width:100%;
+            height:110px;
+            border-radius: 0 0  0 20px; 
+        }
+        p{
+            @apply text-36 font-700 font-cond pt-35 px-40 leading-40;
+        }
+        cite{
+            @apply ml-40 font-700 text-20 mb-40;
+        }
+    }
+
+ }
+
+

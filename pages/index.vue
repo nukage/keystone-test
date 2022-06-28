@@ -1,0 +1,222 @@
+<template>
+  <div>
+ <section class="homeHero">
+    <div class="homeHero__colOne">
+      <h2>LED Bulbs</h2>
+      <h3>Reduce SKUs by 85%<br/>
+      Versatility, durability, reliability.</h3>
+      <a href="#" class="homeHero__button">Spec Info ></a>
+    </div>
+    <div class="homeHero__colTwo">
+      <img src="~/assets/images/future-fit-cropped2.png"/>
+    </div>
+</section>
+<section class="homeCategories">
+  <ul>
+    <li>
+      <a href="#">
+        Lamps
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Fixtures
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Power Supplies
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Controls
+      </a>
+    </li>
+  </ul>
+</section>
+<section class="homeAbout">
+  <div class="homeAbout__largeHeading">
+    <div class="container">
+      <svg class="homeAbout__largeHeading__svg" xmlns="http://www.w3.org/2000/svg" width="1283" height="79" viewBox="0 0 1283 79"><defs><clipPath id="p30aa"><path d="M1272.18 0H1283v12.446h-10.82z"/></clipPath></defs><g><g><path d="M.33 8L0 8.348V79h82.668l.332-.35V65l-.332-.253H19v-56.4L18.708 8z"/></g><g><path d="M90.336 8L90 8.306v70.342l.336.352h18.328l.336-.352V8.306L108.664 8z"/></g><g><path d="M131.691 6h55.651C193.69 6 198 9.374 200.236 16.114c.532 1.886.764 3.528.764 4.957v.51l-.293.359H137v41.993h45V50.75h-33.198V38h51.905l.293.389v25.184c0 4.873-1.858 9.044-5.638 12.516-2.53 1.602-4.988 2.4-7.362 2.4h-56.498c-6.594 0-10.937-3.713-13.034-11.137L118 63.42V21.07c0-5.414 2.157-9.76 6.47-13.071 2.093-1.318 4.53-2 7.221-2"/></g><g clip-path="url(#clip-33CF4B6D-0D19-4E87-B881-1FA1B5BB109C)"><path d="M273.939 6.15h18.333l.327.36v72.13l-.327.36h-18.333l-.326-.36V51.46h-39.806l-.33-.355V35.778l.33-.356h39.806V6.51zm-64.794 0h18.334l.326.36v72.13l-.326.36h-18.334l-.325-.36V6.51z"/></g><g><path d="M300.15 5.33h83.736l.325.36v15.476l-.325.361h-32.26v57.11l-.325.363h-18.707l-.33-.362V21.527H300.15l-.33-.36V5.69z"/></g><g><path d="M479.446 6.36c.554.58 4.554 8.264 11.826 23.05h.14c7.29-14.786 11.23-22.47 11.826-23.05h26.339c.423.341 3.532 6.247 9.188 17.71l27.748 54.672-.14.155h-23.038c-.189-.103-4.335-8.18-12.335-24.228l-14.333-29.417h-.473l-26.527 53.645H466.63l-.141-.155h-.142l13.381-26.488-13.24-27.002H466l-26.462 53.645H416.5l-.188-.155h-.143l36.608-72.227.146-.155z"/></g><g><path d="M634.115 5.33c.377.275 5.213 9.852 14.513 28.749l22.566 44.764L671 79h-23.13c-.313 0-2.29-3.839-5.934-11.505l-.803-1.028h-22.045l-2.265.155-2.076-.155h-11.022v-.359l8.01-15.5h9.422l2.548-.155 2.59.155h7.16v-.155c-8.198-16.668-12.562-25.376-13.099-26.129L593.362 79H570.18l-.33-.363 37.078-73.152.14-.155z"/></g><g><path d="M693.617 22h45.23v42.214h-45.23zM674.44 6.31v72.228l.33.36h70.105c2.419 0 4.9-.804 7.444-2.411C756.121 73 758 68.802 758 63.907V21.095c0-1.643-.245-3.251-.777-4.825C755 9.388 750.796 6 744.738 6H674.77z"/></g><g><path d="M790.683 35.923v15.253l.317.355h52.78l.28-.355V35.923l-.28-.304H791zM766.18 6.87v71.663l.33.36h82.26l.33-.36V63.34l-.33-.34H785V22.421h63.77l.33-.359V6.87l-.33-.36h-82.26z"/></g><g><path d="M922.346 35.817V51l.327.317h52.402l.283-.317V35.817l-.283-.303h-52.402zM898 7v71.133l.345.355H980l.362-.355V63l-.362-.315h-63.266v-40.27H980l.362-.36V7L980 6.61h-81.655z"/></g><g><path d="M1048.507 5.44c.372.27 5.175 9.792 14.41 28.56l22.411 44.439-.188.155h-22.973c-.313 0-2.276-3.808-5.891-11.418l-.799-1.023h-37.146v-.356l7.953-15.392h21.566v-.155c-8.14-16.55-12.476-25.198-13.003-25.946L1008 78.594h-23l-.31-.356 36.821-72.644.139-.154z"/></g><g><path d="M1100.1 5.89h59.329c3.707 0 6.937 2.023 9.68 6.11 1.686 3 2.526 6 2.526 8.928v.509l-.326.36h-64.237v13.305H1158c6.65 0 11 3.737 13.167 11.217l.468 3.975v13.305c0 5.401-2.119 9.787-6.363 13.15-1.65 1.024-3.33 2.251-5.985 2.251h-59.044c-.785-.115-1.612-.115-3.322-.872-3.1-1.378-5.523-3.42-7.115-6.577-1.277-3.061-1.916-5.471-1.916-7.242l.11-.201h64.451v-12.95h-50.9c-6.677 0-11.071-3.737-13.193-11.216L1087.89 36V20.928c0-5.502 2.213-9.928 6.642-13.304 2.121-1.155 3.979-1.734 5.569-1.734"/></g><g><path d="M1171.6 5.33h24.653c1.064 1.153 8.373 11.03 21.947 29.619l.139.204h.189c14.003-19.205 21.36-29.153 22.08-29.823h24.658l.187.154h.14L1229 53.504v25.133l-.324.363H1208l-.282-.363V53.504L1171.27 5.689z"/></g><g><g/><g clip-path="url(#p30aa)"><path d="M1277.59 1.117c-2.962 0-4.296 2.346-4.296 5.105 0 2.948 1.805 5.103 4.34 5.103 2.833 0 4.257-2.107 4.257-5.055 0-2.855-1.68-5.153-4.3-5.153zm.043-1.117c3.22 0 5.367 2.761 5.367 6.222 0 3.65-2.19 6.224-5.367 6.224-3.176 0-5.453-2.528-5.453-6.224 0-3.601 2.19-6.222 5.453-6.222zm-1.032 5.756h1.032c.563 0 1.12-.186 1.12-.893 0-.654-.344-.985-1.162-.985h-.99zm-1.068 3.462V2.9h2.058c1.247 0 2.23.514 2.23 1.87 0 .799-.425 1.229-.939 1.451.68.37.81 1.075.81 1.778 0 .326.042 1 .084 1.218h-1.067c-.085-.28-.085-1.079-.085-1.218 0-.89-.3-1.36-1.162-1.36h-.861v2.578z"/></g></g></g></svg>
+    </div>
+  </div>
+
+    <div class="homeAbout__bg">
+  <div class="container">
+
+      <ul class="homeAbout__iconList">
+        
+      <li>
+        <div class="icon">
+            <img   src="~/assets/images/icons/clock.svg"/>
+        </div>
+       
+      Ask us for<br/>
+  Free Samples</li>
+  <li> 
+    <img  class="icon" src="~/assets/images/icons/clock.svg"/>
+    Fast<br/>
+  Quotes
+  </li>
+  <li>
+    <img  class="icon" src="~/assets/images/icons/clock.svg"/>
+    Quick<br/> 
+  Delivery
+  </li>
+  <li>
+    <img  class="icon" src="~/assets/images/icons/clock.svg"/>
+    Industry<br/> 
+  Leading Warranty
+  </li>
+  <li>
+    <img  class="icon" src="~/assets/images/icons/clock.svg"/>
+    We are<br/>
+  U.S. Based
+  </li>
+  <li>
+    <img  class="icon" src="~/assets/images/icons/clock.svg"/>
+    Awesome<br/>
+   Customer Service
+  </li>
+    </ul>
+
+  <div class="homeAbout__content">
+    <strong>LIGHT MADE EASY.</strong> 						             We nis etur, occat perupta spedicto et porum inverumque et voluptatur samus. Vsimodignime pro ilit et fugit rehenducia dolorro quam ullore et rerum aceptas simagnatur as et ute nis arum fuga. Itatur se nis et exerum voluptatiam consed quasimpor aut rerum repe eicide vendant a simagnis debit quam enihili atist. Consequi consect ureped qui doluptio qui rerio evelend istiunt.
+  </div>
+  <button>
+
+    <a href="#" class="homeAbout__btn">Request a Free Sample</a>
+  </button>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="homeCards">
+  <div class="container">
+  <div class="homeCards__grid">
+    <div class="homeCards__item" v-for="n in 3" :key="n">
+      <img src="~/assets/images/home-card1.png"/>
+      <div class="homeCards__item__content">
+        <h4 class="homeCards__item__content__headline">News</h4>
+        <img class="homeCards__item__content__headline__underline" src="~/assets/images/card-underline.svg"/>
+        <p class="homeCards__content">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede consectetuer adipiscing elit.
+        </p>
+      <a href="#" class="homeCards__item__content__link">Read More</a>
+      </div>
+ 
+    </div>
+
+
+  </div>
+    </div>
+</section>
+<section class="homeVideo">
+ 
+  <div class="homeVideo__colOne" style="">
+    
+    <img src="~/assets/images/home-video-play.png"/>
+    PLAY VIDEO
+  </div>
+  <div class="homeVideo__colTwo">
+       <img class="" src="~/assets/images/keystoneLive.png" alt=""/>
+  
+    <h3 class="homeVideo__colTwo__headline">Bring The Keystone LIVE! Experience 
+Directly to You</h3>
+<p class="homeVideo__colTwo__content">
+  Discover Light Made Easy. Contact your Keystone representative and to find out more about bringing Keystone Live! On Tour to your area.
+</p>
+<a href="#" class="homeVideo__colTwo__btn">
+  Request A Stop
+</a>
+  </div>
+ 
+</section>
+<section class="homeLogoBar">
+  <div class="container">
+    <div class="homeLogoBar__grid">
+      <h3 class="homeLogoBar__headline">Happy<br/>Customers     <br />    <img class="" src="~/assets/images/card-underline.svg"/>
+</h3>
+<div class="logo">
+  <img src="~/assets/images/logo1.png" alt=""/>
+</div>
+    <div class="logo">
+      <img src="~/assets/images/logo2.png" alt=""/>
+</div>
+<div class="logo">
+  <img src="~/assets/images/logo3.png" alt=""/>
+</div>
+<div class="logo">
+  <img src="~/assets/images/logo4.png" alt=""/>
+</div>
+<div class="logo">
+  <img src="~/assets/images/logo5.png" alt=""/>
+</div>
+<div class="logo">
+  <img src="~/assets/images/logo6.png" alt=""/>
+</div>
+<div class="logo">
+  <img src="~/assets/images/logo7.png" alt=""/>
+</div>
+<div class="logo">
+  <img src="~/assets/images/logo8.png" alt=""/>
+</div>  
+<div class="logo">
+  <img src="~/assets/images/logo9.png" alt=""/>
+</div>  
+<div class="logo">
+  <img src="~/assets/images/logo10.png" alt=""/>
+</div> 
+    </div>
+  </div>
+</section>
+
+ 
+ 
+ 
+          <!-- <div v-for="item in todoStore.items">
+          {{ item }}
+          </div>
+          <div v-for="event in eventStore.events" :key="event.id">
+          
+          <h3>{{event.title?.rendered}}</h3>
+          <NuxtLink :to="`/events/${event.slug}`">{{event.title?.rendered}}</NuxtLink>
+          <div class="max-w-screen-md" v-html="event.content?.rendered"></div>
+          </div> -->
+     
+ 
+
+ 
+  
+ 
+  </div>
+</template>
+
+<script setup>
+
+import { useTodoStore } from "~/store/index";
+import { useEventStore } from "~/store/events"
+
+const todoStore = useTodoStore();
+const eventStore = useEventStore();
+  // eventStore.getEvents();
+
+ 
+onMounted(()=>{
+})  
+</script>
+
+<!-- <script>
+export default {
+name: 'IndexPage',
+// computed: {
+//   events() {
+//     return this.$store.state.events;
+//   }
+//  },
+
+};
+</script> -->
